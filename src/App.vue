@@ -1,11 +1,29 @@
 <template>
-  I will be there soon !
+  <div class="main-container">
+    <HeaderLayout/>
+    <RouterView />
+  </div>
 </template>
 
 <script setup>
-
+  import { RouterView } from 'vue-router';
+  import HeaderLayout from '@/components/layouts/HeaderLayout.vue';
 </script>
 
 <style lang="scss">
-  
+  body {
+    background: $color-background-dark-1;
+    color: $color-text-light-1;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  h1, h2 {
+    font-family: 'Bruno Ace', display;
+  }
+</style>
+
+<style lang="scss" scoped>
+  .main-container {
+    padding: 1rem 3rem;
+  }
 </style>

@@ -1,6 +1,14 @@
-// Variables
-$color-text-light: #f0f0f0;
+// Colors
+$color-background-dark-1: rgb(3, 3, 29);
+$color-background-button: rgb(33, 33, 95);
+$color-background-button-hover: rgb(48, 48, 100);
+$color-background-card: rgb(111, 111, 160);
+$color-text-light-1: #d4c88f;
 
+// Fonts
+@import url(https://fonts.bunny.net/css?family=bruno-ace:400|nunito-sans:400);
+
+// Breakpoints
 $sm-breakpoint: 576px;
 $md-breakpoint: 768px;
 $lg-breakpoint: 992px;
