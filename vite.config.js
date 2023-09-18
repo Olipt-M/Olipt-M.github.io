@@ -21,5 +21,12 @@ export default defineConfig({
             `,
       },
     },
-  }
+  },
 })
+
+// Deployment
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/'
+    : '/'
+}
