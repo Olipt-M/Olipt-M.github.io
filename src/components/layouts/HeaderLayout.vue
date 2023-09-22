@@ -24,14 +24,12 @@
     align-items: center;
   }
 
-  nav, ul {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
   li {
-    list-style-type: none;
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
   }
 
   .nav-link {

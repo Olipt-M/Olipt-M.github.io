@@ -20,10 +20,17 @@
   h1, h2 {
     font-family: 'Bruno Ace', display;
   }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 </style>
 
 <style lang="scss" scoped>
   .main-container {
-    padding: 1rem 3rem;
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    margin: auto;
   }
 </style>
