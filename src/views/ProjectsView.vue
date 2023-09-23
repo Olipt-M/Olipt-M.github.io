@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <main class="container">
     <div class="projects-container">
       <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"></ProjectCard>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup>

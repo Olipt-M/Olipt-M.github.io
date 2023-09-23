@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <main class="container">
     <div class="presentation-container">
       <div class="presentation">
         <h1>Olivier Mignot</h1>
@@ -18,7 +18,7 @@
         <img :src="Rocket" alt="Image de fusée" class="picture-rocket">
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -32,9 +32,10 @@
   .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .presentation-container, .image-container {
-    width: 50%;
+    width: 45%;
     margin-top: 5rem;
 
     @media screen and (max-width: $md-breakpoint) {
