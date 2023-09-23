@@ -1,7 +1,7 @@
 <template>
   <header>
-    <p v-if="windowWidth > $md-breakpoint"><RouterLink :to="{name: 'home'}" class="logo">Olivier Mignot</RouterLink></p>
-    <p v-else><RouterLink :to="{name: 'home'}" class="logo">OM</RouterLink></p>
+    <p class="logo-extended"><RouterLink :to="{name: 'home'}" class="logo">Olivier Mignot</RouterLink></p>
+    <p class="logo-small"><RouterLink :to="{name: 'home'}" class="logo">OM</RouterLink></p>
     
     <nav>
       <ul>
@@ -14,9 +14,6 @@
 
 <script setup>
   import { RouterLink } from 'vue-router';
-  import { ref } from 'vue';
-
-  const windowWidth = ref(window.innerWidth);
 </script>
 
 <style lang="scss" scoped>
@@ -58,6 +55,18 @@
         box-shadow: 0px 0px 80px 19px rgba($color-background-button-hover, 0.75);
         background-color: rgba($color-background-button-hover, 0.3);
       }
+    }
+  }
+
+  @media screen and (max-width: $md-breakpoint) {
+    .logo-extended {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: calc($md-breakpoint + 1px)) {
+    .logo-small {
+      display: none;
     }
   }
 
