@@ -1,6 +1,7 @@
 <template>
   <header>
-    <p><RouterLink :to="{name: 'home'}" class="nav-link">Olivier Mignot</RouterLink></p>
+    <p v-if="windowWidth > $md-breakpoint"><RouterLink :to="{name: 'home'}" class="logo">Olivier Mignot</RouterLink></p>
+    <p v-else><RouterLink :to="{name: 'home'}" class="logo">OM</RouterLink></p>
     
     <nav>
       <ul>
@@ -13,6 +14,9 @@
 
 <script setup>
   import { RouterLink } from 'vue-router';
+  import { ref } from 'vue';
+
+  const windowWidth = ref(window.innerWidth);
 </script>
 
 <style lang="scss" scoped>
@@ -32,9 +36,10 @@
     }
   }
 
-  .nav-link {
+  .nav-link, .logo {
     color: $color-text-light-1;
     text-decoration: none;
+    padding-bottom: 1rem;
   }
 
   p, nav {
@@ -42,7 +47,21 @@
   }
 
   p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
+    font-weight: bold;
+
+    .logo {
+      color: $color-text-light-2;
+
+      &:hover {
+        box-shadow: 0px 0px 80px 19px rgba($color-background-button-hover, 0.75);
+        background-color: rgba($color-background-button-hover, 0.3);
+      }
+    }
+  }
+
+  .nav-link:hover {
+    border-bottom: 2px solid $color-text-light-2;
   }
 </style>

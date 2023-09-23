@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex">
+  <div class="container">
     <div class="image-container">
       <img :src="project.picture" :alt="project.title">
     </div>
@@ -23,6 +23,8 @@
 
 <style lang="scss" scoped>
   .container {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background: $color-background-card;
     height: 500px;

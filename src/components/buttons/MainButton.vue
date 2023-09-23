@@ -19,6 +19,7 @@
 
     &:hover {
       background: $color-background-button-hover;
+      box-shadow: 0px 0px 80px 19px rgba($color-background-button-hover, 0.75);
     }
   }
 </style>

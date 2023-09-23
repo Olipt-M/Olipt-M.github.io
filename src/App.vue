@@ -20,11 +20,6 @@
   h1, h2 {
     font-family: 'Bruno Ace', display;
   }
-
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-}
 </style>
 
 <style lang="scss" scoped>
