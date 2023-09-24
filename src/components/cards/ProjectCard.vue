@@ -2,18 +2,21 @@
   <div class="container">
     <div class="card">
       <div class="image-container">
-        <img :src="project.picture" :alt="project.title">
+        <router-link :to="{name: 'projectDescription', params: {id: project.id}}">
+          <img :src="project.pictures[0]" :alt="project.title">
+        </router-link>
       </div>
       <h2>{{ project.title }}</h2>
       <p>{{ project.description }}</p>
       <p>Technologies utilisées: {{ project.technologies }}</p>
-      <MainButton class="button">Voir le projet</MainButton>
+      <MainButton class="button"><router-link :to="{name: 'projectDescription', params: {id: project.id}}" class="link">Voir le projet</router-link></MainButton>
     </div>
   </div>
 </template>
 
 <script setup>
   import MainButton from '@/components/buttons/MainButton.vue';
+  import { RouterLink } from 'vue-router';
 
   const props = defineProps({
     project: {
@@ -72,5 +75,11 @@
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
+
+    .link {
+      text-decoration: none;
+      color: $color-text-light-1;
+      font-size: 1.6rem;
+    }
   }
 </style>

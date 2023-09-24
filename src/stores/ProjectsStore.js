@@ -7,14 +7,27 @@ export const useProjectsStore = defineStore('projects', {
         {
           id: 1,
           title: 'Zoonder',
-          picture: "/zoonder/zoonder1.jpg",
-          description: "Mon premier projet complet en Vue.js. L'objectif de cette application est de donner à votre animal préféré la chance de trouver l'âme-soeur, sur le principe de Tinder. Connectez-vous, swipez et allez voir dans le récap avec qui vous avez matché !",
+          pictures: [
+            "/zoonder/zoonder1.jpg",
+            "/zoonder/zoonder2.jpg",
+            "/zoonder/zoonder3.jpg",
+            "/zoonder/zoonder4.jpg",
+            "/zoonder/zoonder5.jpg"
+          ],
+          description: "Mon premier projet complet en Vue.js. Le but de cette application est de donner à votre animal préféré la chance de trouver l'âme-soeur, sur le principe de Tinder. Connectez-vous, swipez et allez voir dans le récap avec qui vous avez matché !",
           technologies:"Vue.js"
         },
         {
           id: 2,
           title: 'VueFlix',
-          picture: "/vueflix/vueflix1.jpg",
+          pictures: [
+            "/vueflix/vueflix1.jpg",
+            "/vueflix/vueflix2.jpg",
+            "/vueflix/vueflix3.jpg",
+            "/vueflix/vueflix4.jpg",
+            "/vueflix/vueflix5.jpg",
+            "/vueflix/vueflix6.jpg"
+          ],
           description: "VueFlix est un catalogue de films. Prenez connaissance des derniers films en salle, et allez consulter leurs descriptions et leurs bande-annonces. Si vous êtes connecté vous pourrez même ajouter des films à votre panier.",
           technologies:"Vue.js / SASS"
         }
