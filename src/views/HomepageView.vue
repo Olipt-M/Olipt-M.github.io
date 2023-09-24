@@ -33,10 +33,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 5rem;
   }
   .presentation-container, .image-container {
     width: 45%;
-    margin-top: 5rem;
 
     @media screen and (max-width: $md-breakpoint) {
       width: 100%;
@@ -66,6 +66,7 @@
   p {
     margin: 4rem 0;
     font-size: 1.7rem;
+    line-height: 1.5;
   }
 
   .link-to-projects {

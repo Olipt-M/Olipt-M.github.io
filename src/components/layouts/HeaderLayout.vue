@@ -52,8 +52,8 @@
       color: $color-text-light-2;
 
       &:hover {
-        box-shadow: 0px 0px 80px 19px rgba($color-background-button-hover, 0.75);
-        background-color: rgba($color-background-button-hover, 0.3);
+        box-shadow: 0px 0px 80px 12px rgba($color-background-button-hover, 0.75);
+        background-color: rgba($color-background-button-hover, 0.25);
       }
     }
   }

@@ -13,7 +13,7 @@
 <style lang="scss" scoped>
 
   footer {
-    padding: 5rem 0 3rem 0;
+    padding: 6rem 0 3rem 0;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,32 +1,31 @@
 <template>
   <main class="container">
     <div class="projects-container">
-      <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"></ProjectCard>
+      <ProjectCard v-for="project in projects" :key="project.id" :project="project"></ProjectCard>
     </div>
   </main>
 </template>
 
 <script setup>
-  import { ref } from 'vue';
   import ProjectCard from '@/components/cards/ProjectCard.vue';
-  const projects = ref([
-    {
-      title: 'Zoonder',
-      picture: "",
-      description: "",
-      technologies:"Vue.js"
-    },
-    {
-      title: 'VueFlix',
-      picture: "",
-      description: "",
-      technologies:"Vue.js; SASS"
-    }
-  ]);
+  import { useProjectsStore } from '@/stores/ProjectsStore.js';
+  const projectsStore = useProjectsStore();
 
-
+  const projects = projectsStore.getProjects;
 </script>
 
 <style lang="scss" scoped>
+  .container {
+    margin-top: 5rem;
+  }
 
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @media screen and (max-width: $md-breakpoint) {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
