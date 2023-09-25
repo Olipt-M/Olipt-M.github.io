@@ -9,7 +9,7 @@
           <br>Après 10 ans d'une première vie professionnelle faite d'expériences variées, je pars vers de nouveaux horizons en tant que développeur web.
           <br>Embarquez avec moi et découvrez mes projets à travers ce portfolio !
         </p>
-        <MainButton><RouterLink :to="{name: 'projects'}" class="link-to-projects">Décollage immédiat</RouterLink></MainButton>
+        <RouterLink :to="{name: 'projects'}" class="link-to-projects">Décollage immédiat</RouterLink>
       </div>
     </div>
     <div class="image-container">
@@ -23,7 +23,6 @@
 
 <script setup>
   import { RouterLink } from 'vue-router';
-  import MainButton from '@/components/buttons/MainButton.vue';
   import Olivier from '@/components/images/olivier-removebg.png';
   import Rocket from '@/components/images/rocket-removebg.png';
 </script>
@@ -50,6 +49,7 @@
 
     @media screen and (max-width: $md-breakpoint) {
       order: 2;
+      margin-top: 5rem;
     }
   }
 
@@ -70,9 +70,7 @@
   }
 
   .link-to-projects {
-    text-decoration: none;
-    color: $color-text-light-1;
-    font-size: 1.6rem;
+    @include button;
   }
 
   .presentation {

@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
   header {
-    background: $color-background-dark-1;
+    // background: $color-background-dark-1;
     color: $color-text-light-1;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,11 @@
     }
   }
 
-  .nav-link:hover {
-    border-bottom: 2px solid $color-text-light-2;
+  .nav-link {
+    font-size: 1.8rem;
+
+    &:hover {
+      border-bottom: 2px solid $color-text-light-2;
+    }
   }
 </style>

@@ -14,9 +14,12 @@
 
 <style lang="scss">
   body {
-    background: $color-background-dark-1;
+    // background: $color-background-dark-1;
     color: $color-text-light-1;
     font-family: 'Nunito Sans', sans-serif;
+    background-image: url("/night_sky_space_stars-71706.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   h1, h2 {

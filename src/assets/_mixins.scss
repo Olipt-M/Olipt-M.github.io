@@ -2,3 +2,20 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin button {
+  cursor: pointer;
+  padding: 1.6rem 4rem;
+  background: $color-background-button;
+  color: $color-text-light-1;
+  text-decoration: none;
+  border-radius: 7px;
+  font-family: 'Bruno Ace', display;
+  font-size: 1.6rem;
+  text-align: center;
+
+  &:hover {
+    background: $color-background-button-hover;
+    box-shadow: 0px 0px 80px 19px rgba($color-background-button-hover, 0.75);
+  }
+}
