@@ -2,21 +2,21 @@
   <div class="container">
     <div class="card">
       <div class="image-container">
-        <router-link :to="{name: 'projectDescription', params: {id: project.id}}">
+        <!-- <router-link :to="{name: 'projectDescription', params: {id: project.id}}"> -->
           <img :src="project.pictures[0]" :alt="project.title">
-        </router-link>
+        <!-- </router-link> -->
       </div>
       <h2>{{ project.title }}</h2>
       <p>{{ project.description }}</p>
       <p>Technologies utilisées: {{ project.technologies }}</p>
-      <MainButton class="button"><router-link :to="{name: 'projectDescription', params: {id: project.id}}" class="link">Voir le projet</router-link></MainButton>
+      <!-- <MainButton class="button"><router-link :to="{name: 'projectDescription', params: {id: project.id}}" class="link">Voir le projet</router-link></MainButton> -->
     </div>
   </div>
 </template>
 
 <script setup>
-  import MainButton from '@/components/buttons/MainButton.vue';
-  import { RouterLink } from 'vue-router';
+  // import MainButton from '@/components/buttons/MainButton.vue';
+  // import { RouterLink } from 'vue-router';
 
   const props = defineProps({
     project: {
@@ -44,21 +44,17 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 830px;
+    // height: 830px;
     position: relative;
     border-radius: 10px;
     width: 100%;
   }
 
   img {
-    height: 450px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 
   .image-container {
@@ -69,17 +65,17 @@
     padding: 0 1rem;
   }
 
-  .button {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
+  // .button {
+  //   position: absolute;
+  //   bottom: 10px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: 90%;
 
-    .link {
-      text-decoration: none;
-      color: $color-text-light-1;
-      font-size: 1.6rem;
-    }
-  }
+  //   .link {
+  //     text-decoration: none;
+  //     color: $color-text-light-1;
+  //     font-size: 1.6rem;
+  //   }
+  // }
 </style>

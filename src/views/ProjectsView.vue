@@ -21,10 +21,14 @@
 
   .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 
-    @media screen and (max-width: $md-breakpoint) {
+    @media screen and (max-width: $lg-breakpoint) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: $sm-breakpoint) {
       grid-template-columns: 1fr;
     }
   }
