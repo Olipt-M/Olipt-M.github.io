@@ -68,6 +68,26 @@ export const useProjectsStore = defineStore('projects', {
           ],
           githubPage: "https://github.com/Olipt-M/MyPHPmovies",
           webPage: ""
+        },
+        {
+          id: 4,
+          title: 'Mass PHP Effect',
+          pictures: [
+            "/massphpeffect/massphpeffect1.JPG"
+          ],
+          description: "A la bagarre ! Mass PHP Effect est un jeu de combat de cartes sur le thème de la franchise Mass Effect. Sélectionnez votre personnage et affrontez une IA aléatoire. Si vous choissez les bonnes attaques, à vous la victoire !",
+          technologies: [
+            {
+              name: "PHP",
+              logo: "/logos/logoPHP.svg"
+            },
+            {
+              name: "Sass",
+              logo: "/logos/logoSass.svg"
+            }
+          ],
+          githubPage: "https://github.com/Olipt-M/MassPHPEffect",
+          webPage: ""
         }
       ]
     }
