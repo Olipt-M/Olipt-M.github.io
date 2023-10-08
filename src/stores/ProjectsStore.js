@@ -88,6 +88,22 @@ export const useProjectsStore = defineStore('projects', {
           ],
           githubPage: "https://github.com/Olipt-M/MassPHPEffect",
           webPage: ""
+        },
+        {
+          id: 5,
+          title: 'Telefoot',
+          pictures: [
+            "/telefoot/telefoot1.JPG"
+          ],
+          description: "Etes-vous une personne connectée ?! En partant d'un projet existant (page d'accueil et styles), j'ai ajouté les fonctionnalités d'authentification : création de compte, connexion, mot de passe oublié.",
+          technologies: [
+            {
+              name: "PHP",
+              logo: "/logos/logoPHP.svg"
+            }
+          ],
+          githubPage: "https://github.com/Olipt-M/Telefoot",
+          webPage: ""
         }
       ]
     }
