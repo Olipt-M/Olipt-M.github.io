@@ -64,6 +64,10 @@ export const useProjectsStore = defineStore('projects', {
             {
               name: "Sass",
               logo: "/logos/logoSass.svg"
+            },
+            {
+              name: "MySQL",
+              logo: "/logos/logoMySQL.svg"
             }
           ],
           githubPage: "https://github.com/Olipt-M/MyPHPmovies",
