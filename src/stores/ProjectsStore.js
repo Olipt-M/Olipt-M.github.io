@@ -64,6 +64,10 @@ export const useProjectsStore = defineStore('projects', {
             {
               name: "Sass",
               logo: "/logos/logoSass.svg"
+            },
+            {
+              name: "MySQL",
+              logo: "/logos/logoMySQL.svg"
             }
           ],
           githubPage: "https://github.com/Olipt-M/MyPHPmovies",
@@ -100,9 +104,37 @@ export const useProjectsStore = defineStore('projects', {
             {
               name: "PHP",
               logo: "/logos/logoPHP.svg"
+            },
+            {
+              name: "MySQL",
+              logo: "/logos/logoMySQL.svg"
             }
           ],
           githubPage: "https://github.com/Olipt-M/Telefoot",
+          webPage: ""
+        },
+        {
+          id: 6,
+          title: 'Label Car',
+          pictures: [
+            "/labelcar/labelcar1.jpg"
+          ],
+          description: "A travers ce projet j'ai créé une API qui permet à l'administrateur d'un site de location de véhicules de modifier la base de données des véhicules. Côté front j'ai réalisé l'interface associée (afficher, ajouter et supprimer des véhicules).",
+          technologies: [
+            {
+              name: "Node.js",
+              logo: "/logos/logoNodejs.svg"
+            },
+            {
+              name: "MongoDB",
+              logo: "/logos/logoMongoDB.svg"
+            },
+            {
+              name: "Vue",
+              logo: "/logos/logoVuejs.svg"
+            }
+          ],
+          githubPage: "https://github.com/Olipt-M/Label-Car-Back",
           webPage: ""
         }
       ]
