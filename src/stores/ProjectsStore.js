@@ -136,11 +136,39 @@ export const useProjectsStore = defineStore('projects', {
           ],
           githubPage: "https://github.com/Olipt-M/Label-Car-Back",
           webPage: ""
+        },
+        {
+          id: 7,
+          title: 'Interstellar Adventures',
+          pictures: [
+            "/interstellaradventures/interstellaradventures1.JPG"
+          ],
+          description: "Interstellar Adventures est une agence de voyage interstellaire. Préférez-vous un simple voyage commercial sur une planète déjà connue, une croisière, ou devenir un colon moderne ? Sélectionnez vos dates et embarquez dans le vaisseau de votre choix !",
+          technologies: [
+            {
+              name: "Laravel",
+              logo: "/logos/logoLaravel.svg"
+            },
+            {
+              name: "MySQL",
+              logo: "/logos/logoMySQL.svg"
+            },
+            {
+              name: "Vue",
+              logo: "/logos/logoVuejs.svg"
+            },
+            {
+              name: "Sass",
+              logo: "/logos/logoSass.svg"
+            }
+          ],
+          githubPage: "https://github.com/Olipt-M/Label-Car-Back",
+          webPage: ""
         }
       ]
     }
   },
   getters: {
-    getProjects: (state) => state.projects
+    getProjects: (state) => [...state.projects].reverse()
   }
 });

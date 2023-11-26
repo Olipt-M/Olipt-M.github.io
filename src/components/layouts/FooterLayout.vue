@@ -1,14 +1,14 @@
+<script setup>
+  import BrandsGithub from '@/components/images/BrandsGithub.vue';
+  import BrandsLinkedin from '@/components/images/BrandsLinkedin.vue';
+</script>
+
 <template>
   <footer>
     <a href="https://www.linkedin.com/in/olivier-mignot-42351911b/" target="_blank"><BrandsLinkedin class="logo"/></a>
     <a href="https://github.com/Olipt-M" target="_blank"><BrandsGithub class="logo"/></a>
   </footer>
 </template>
-
-<script setup>
-  import BrandsGithub from '@/components/images/BrandsGithub.vue';
-  import BrandsLinkedin from '@/components/images/BrandsLinkedin.vue';
-</script>
 
 <style lang="scss" scoped>
 

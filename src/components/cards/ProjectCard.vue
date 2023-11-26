@@ -1,3 +1,12 @@
+<script setup>
+  const props = defineProps({
+    project: {
+      type: Object,
+      required: true
+    }
+  });
+</script>
+
 <template>
   <div class="container">
     <div class="card">
@@ -14,15 +23,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-  const props = defineProps({
-    project: {
-      type: Object,
-      required: true
-    }
-  });
-</script>
 
 <style lang="scss" scoped>
   .container {

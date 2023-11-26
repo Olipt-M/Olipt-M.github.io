@@ -1,3 +1,9 @@
+<script setup>
+  import { RouterLink } from 'vue-router';
+  import Olivier from '@/components/images/olivier-removebg.png';
+  import Rocket from '@/components/images/rocket-removebg.png';
+</script>
+
 <template>
   <main class="container">
     <div class="presentation-container">
@@ -20,12 +26,6 @@
     </div>
   </main>
 </template>
-
-<script setup>
-  import { RouterLink } from 'vue-router';
-  import Olivier from '@/components/images/olivier-removebg.png';
-  import Rocket from '@/components/images/rocket-removebg.png';
-</script>
 
 <style lang="scss" scoped>
   .container {
