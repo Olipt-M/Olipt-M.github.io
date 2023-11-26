@@ -1,11 +1,3 @@
-<template>
-  <main class="container">
-    <div class="projects-container">
-      <ProjectCard v-for="project in projects" :key="project.id" :project="project"></ProjectCard>
-    </div>
-  </main>
-</template>
-
 <script setup>
   import ProjectCard from '@/components/cards/ProjectCard.vue';
   import { useProjectsStore } from '@/stores/ProjectsStore.js';
@@ -13,6 +5,14 @@
 
   const projects = projectsStore.getProjects;
 </script>
+
+<template>
+  <main class="container">
+    <div class="projects-container">
+      <ProjectCard v-for="project in projects" :key="project.id" :project="project"></ProjectCard>
+    </div>
+  </main>
+</template>
 
 <style lang="scss" scoped>
   .container {

@@ -1,3 +1,7 @@
+<script setup>
+  import { RouterLink } from 'vue-router';
+</script>
+
 <template>
   <header>
     <p class="logo-extended"><RouterLink :to="{name: 'home'}" class="logo">Olivier Mignot</RouterLink></p>
@@ -12,13 +16,8 @@
   </header>
 </template>
 
-<script setup>
-  import { RouterLink } from 'vue-router';
-</script>
-
 <style lang="scss" scoped>
   header {
-    // background: $color-background-dark-1;
     color: $color-text-light-1;
     display: flex;
     justify-content: space-between;
@@ -72,9 +71,23 @@
 
   .nav-link {
     font-size: 1.8rem;
+    position: relative;
 
-    &:hover {
+    // &:hover {
+    //   border-bottom: 2px solid $color-text-light-2;
+    // }
+    &::after {
+      content: '';
       border-bottom: 2px solid $color-text-light-2;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 </style>
