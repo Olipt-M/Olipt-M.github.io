@@ -2,6 +2,7 @@
   import { RouterLink } from 'vue-router';
   import Olivier from '@/components/images/olivier-removebg.png';
   import Rocket from '@/components/images/rocket-removebg.png';
+  import Smoke from '@/components/images/nuage-removebg.png';
 </script>
 
 <template>
@@ -22,6 +23,7 @@
       <div class="merged-picture">
         <img :src="Olivier" alt="Photo d'Olivier Mignot" class="picture-olivier">
         <img :src="Rocket" alt="Image de fusée" class="picture-rocket">
+        <img :src="Smoke" alt="Image de nuage" class="picture-smoke">
       </div>
     </div>
   </main>
@@ -108,23 +110,45 @@
           transform: translate(0, 5px);
         }
       }
+    }
 
-      .picture-rocket {
-        z-index: 2;
-        width : 500px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    .picture-rocket {
+      z-index: 2;
+      width : 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-      .picture-olivier {
-        z-index: 1;
-        width : 70px;
-        position: absolute;
-        top: 34%;
-        left: 51%;
-        transform: translate(-50%, -50%);
+    .picture-olivier {
+      z-index: 1;
+      width : 70px;
+      position: absolute;
+      top: 34%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+    }
+
+    .picture-smoke {
+      position: absolute;
+      z-index: 3;
+      opacity: 25%;
+      animation: 0.2s ease-in-out infinite alternate cloud;
+
+      @keyframes cloud {
+        0% {
+          width: 225px;
+          top: 86%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        100% {
+          width: calc(225px * 1.02);
+          top: 86%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
   }

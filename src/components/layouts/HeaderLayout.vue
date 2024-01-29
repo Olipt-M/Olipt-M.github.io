@@ -73,9 +73,6 @@
     font-size: 1.8rem;
     position: relative;
 
-    // &:hover {
-    //   border-bottom: 2px solid $color-text-light-2;
-    // }
     &::after {
       content: '';
       border-bottom: 2px solid $color-text-light-2;
