@@ -1,0 +1,1 @@
+import{u as e}from"./ProjectsStore-f21e3500.js";import{_ as o,o as t,c}from"./index-5ed518b0.js";const s={class:"container"},r={__name:"ProjectDescriptionView",setup(_){return e().getProjects,(a,i)=>(t(),c("main",s," Bonjour "))}},d=o(r,[["__scopeId","data-v-a110d5e3"]]);export{d as default};
